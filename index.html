@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Devs School</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1 class="title">Dev School</h1>
+
+            <ul>
+               <li>Início</li>
+                <li>Plataforma</li>
+                <li>Cursos</li>
+                <li id="li-login">login</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="main-login">
+            <section class="left-login">
+                <h1>Faça login para <br>E entre para o nosso time</h1> 
+                <img src="./img/computer.svg" class="left-login-img" alt="">
+            </section>
+    
+            <section class="right-login">
+                <div class="card-login">
+                    <h1>LOGIN</h1>
+                    <div class="textfield">
+                        <label for="Usuário">Usuário</label>
+                        <input id="user" type="text" name="usuario" placeholder="Usuário">
+                    </div>
+                    <div class="textfield">
+                        <label for="Senha">Senha</label>
+                        <input id="password" type="password" name="senha" placeholder="Senha">
+                    </div>
+                    <button id="loginBtn" class="btn-login" onclick="validate()">Login</button>
+
+                    <div id="validate">
+                        <h4 id="validateMsg"></h4>
+                    </div>
+
+                    <h4><a href="">Cadastrar-se na Dev School</a></h4>
+                </div>                   
+            </section>
+        </section>
+    </main>  
+    <script src="./script.js"></script>  
+</body>
+</html>
